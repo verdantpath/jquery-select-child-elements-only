@@ -5,13 +5,13 @@
   // selects the children of the element of #nav
   // $('#nav').children().addClass('selected');
 
-  // children() works well with variables, and jQuery objects stored in them
+  // children() works well with variables, and jQuery objects stored in them. You can pass a selector to childre() as well.
   var listItems = $('li');
 
-  // listItems.children().addClass('selected');
+  listItems.children('a').css('color', '#ddd');
 
   // $('> *', listItems).addClass('selected');
 
-  listItems.find('> *').addClass('selected');
+  // listItems.find('> *').addClass('selected');
 
 })(jQuery); // invoke nameless function and pass it the jQuery object
